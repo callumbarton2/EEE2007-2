@@ -16,13 +16,17 @@ int main(int argc, char *argv[]){
 		cout << endl;
 
 
-	for(int argcount = 1; argcount < argc; argcount++){
+	for(int argcount = 0; argcount < argc; argcount++){
 		string temp = argv[argcount];
+		cout << temp << endl;
 		if (temp == "--sensorMode"){
-			cout << "Operating In Sensor Mode";
+			cout << "Operating In Sensor Mode" << endl;
+		}
+		if (temp == "--personMode"){
+			cout << "Operating in Person Mode" << endl;
 		}
 		else{
-			cout << "No Mode detected";
+			cout << "No Mode detected" << endl;
 		}
 	}
 
